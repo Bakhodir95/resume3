@@ -12,7 +12,7 @@ class HomeContent extends StatefulWidget {
 class _HomeContentState extends State<HomeContent> {
   void _navigate() async {
     const url =
-        "https://yandex.uz/maps/geo/1508547282/?ll=72.048075%2C40.708170&z=14.23";
+        "https://yandex.uz/maps/geo/1508547282/?ll=41.2995%2C69.2401&z=14.23";
     if (await canLaunch(url)) {
       await launch(url);
     } else {
@@ -57,7 +57,7 @@ class _HomeContentState extends State<HomeContent> {
           ),
           const SizedBox(height: 16),
           const Text(
-            '+1 years experience',
+            '+2 years experience',
             style: TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.bold,
@@ -73,7 +73,7 @@ class _HomeContentState extends State<HomeContent> {
               TextButton(
                 onPressed: _navigate,
                 child: const Text(
-                  "Uzbekistan, Andijan, Shahrixan",
+                  "Uzbekistan, Tashkent, Mirzo Ulugbek",
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.red,
@@ -84,7 +84,7 @@ class _HomeContentState extends State<HomeContent> {
           ),
           const SizedBox(height: 10),
           const Text(
-            "You can find me",
+            "For Networking You are Welcome",
             style: TextStyle(
               fontSize: 18,
               color: Color.fromARGB(255, 47, 47, 224),
@@ -96,7 +96,7 @@ class _HomeContentState extends State<HomeContent> {
             children: [
               ZoomTapAnimation(
                 onTap: () async {
-                  const url = "https://t.me/tojiddinov7";
+                  const url = "https://t.me/bakhodir1995";
                   if (await canLaunch(url)) {
                     await launch(url);
                   } else {
@@ -112,7 +112,7 @@ class _HomeContentState extends State<HomeContent> {
               ),
               ZoomTapAnimation(
                 onTap: () async {
-                  const url = "https://www.instagram.com/tojiddinovs7/";
+                  const url = "https://www.instagram.com/bahodirturdimurodov/";
                   if (await canLaunch(url)) {
                     await launch(url);
                   } else {
@@ -127,24 +127,10 @@ class _HomeContentState extends State<HomeContent> {
                   ),
                 ),
               ),
+              //
               ZoomTapAnimation(
                 onTap: () async {
-                  const url =
-                      "https://www.linkedin.com/in/muhammadabdulloh-tojiddinov-207a20273/";
-                  if (await canLaunch(url)) {
-                    await launch(url);
-                  } else {
-                    throw "Couldn't find url";
-                  }
-                },
-                child: CircleAvatar(
-                  radius: 25,
-                  child: Image.asset("assets/icons/linkedin.png"),
-                ),
-              ),
-              ZoomTapAnimation(
-                onTap: () async {
-                  const url = "https://github.com/TojiddinovMuhammadabdullox";
+                  const url = "https://github.com/Bakhodir95";
                   if (await canLaunch(url)) {
                     await launch(url);
                   } else {
@@ -161,7 +147,7 @@ class _HomeContentState extends State<HomeContent> {
           const Spacer(),
           ZoomTapAnimation(
             onTap: () async {
-              const phoneNumber = 'tel: +998991075508';
+              const phoneNumber = 'tel: +998900144173';
               if (await canLaunch(phoneNumber)) {
                 await launch(phoneNumber);
               } else {
