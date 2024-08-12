@@ -12,7 +12,7 @@ class HomeContent extends StatefulWidget {
 class _HomeContentState extends State<HomeContent> {
   void _navigate() async {
     const url =
-        "https://yandex.uz/maps/geo/1508547282/?ll=41.2995%2C69.2401&z=14.23";
+        "https://yandex.uz/maps/geo/1508547282/?ll=41.3112%2C69.2797&z=14.23";
     if (await canLaunch(url)) {
       await launch(url);
     } else {
@@ -25,6 +25,7 @@ class _HomeContentState extends State<HomeContent> {
     return Padding(
       padding: const EdgeInsets.all(16.0),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           CircleAvatar(
@@ -32,12 +33,12 @@ class _HomeContentState extends State<HomeContent> {
             backgroundColor: Colors.grey.shade500,
             child: const CircleAvatar(
               radius: 55,
-              backgroundImage: AssetImage('assets/images/logo.png'),
+              backgroundImage: AssetImage('assets/icons/logo.png'),
             ),
           ),
           const SizedBox(height: 16),
           Text(
-            'Tojiddinov\nMuhammad Abdulloh',
+            'Bahodir Turdimurodov',
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 24,
